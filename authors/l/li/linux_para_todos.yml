@@ -1,0 +1,11 @@
+--- 
+countries: 
+  - mx
+email: ~
+enabled: 'on'
+filename: linux_para_todos
+message: ~
+name: Linux Para Todos
+portal: 1
+twitter: ~
+url: http://www.linuxparatodos.net/portal/backend/backend.rss

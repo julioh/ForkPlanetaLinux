@@ -1,0 +1,11 @@
+--- 
+countries: 
+  - mx
+email: ~
+enabled: 'on'
+filename: otro_podcast_sobre_linux
+message: ~
+name: Otro Podcast Sobre Linux
+portal: 1
+twitter: ~
+url: http://feeds.feedburner.com/OtroPodcastSobreLinux

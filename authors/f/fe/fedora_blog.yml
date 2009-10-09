@@ -1,0 +1,11 @@
+--- 
+countries: 
+  - es
+email: ~
+enabled: 'on'
+filename: fedora_blog
+message: ~
+name: fedora | blog
+portal: 1
+twitter: ~
+url: http://fedorablog.wordpress.com/feed/atom/

@@ -1,0 +1,22 @@
+--- 
+countries: 
+  - ar
+  - cl
+  - co
+  - cr
+  - ec
+  - es
+  - gt
+  - mx
+  - ni
+  - pa
+  - pe
+  - sv
+  - ve
+email: david@axiombox.com
+enabled: off
+filename: planeta_linux_github_commits.yml
+message: "Habilitado únicamente para tests."
+name: Planeta Linux GitHub commits
+twitter: planetalinux
+url: http://github.com/feeds/axiombox/commits/planetalinux/master

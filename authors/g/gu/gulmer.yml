@@ -1,0 +1,11 @@
+--- 
+countries: 
+  - ve
+email: ~
+enabled: 'on'
+filename: gulmer
+message: ~
+name: GULMER
+portal: 1
+twitter: ~
+url: http://www.gulmer.org.ve/index.php?q=node/feed

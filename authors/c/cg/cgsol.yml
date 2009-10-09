@@ -1,0 +1,11 @@
+--- 
+countries: 
+  - gt
+email: ~
+enabled: 'on'
+filename: cgsol
+message: ~
+name: CGSOL
+portal: 1
+twitter: ~
+url: http://cgsol.xelalug.org/index.php?title=Especial:RecentChanges&feed=atom

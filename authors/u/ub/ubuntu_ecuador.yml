@@ -1,0 +1,11 @@
+--- 
+countries: 
+  - ec
+email: ~
+enabled: 'on'
+filename: ubuntu_ecuador
+message: ~
+name: Ubuntu Ecuador
+portal: 1
+twitter: ~
+url: http://www.ubuntu.ec/rss.xml

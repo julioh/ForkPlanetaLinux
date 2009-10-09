@@ -1,0 +1,100 @@
+#!/usr/bin/perl
+
+use Modern::Perl;
+use File::Basename;
+
+use lib dirname(__FILE__).'/../lib';
+
+use Config::IniFiles;
+use App::PPBuild;
+use Net::Domain::ES::ccTLD;
+use PlanetaLinux;
+use Data::Dumper;
+use File::Path qw/remove_tree/;
+
+my $dir = dirname(__FILE__);
+
+open my $fh, "<", $dir."/../config/countries.list"
+	or die "Couldn't read the countries list.";
+
+my $r = {};
+
+my $all = [];
+
+while(<$fh>) {
+	chomp;
+	my $c_id = $_;
+	
+	my $c_name = find_name_by_cctld( $c_id )
+		or die "Couldn't find the name in Spanish for the ccTLD: `$c_id'. I better die.\n";
+		
+	task $c_id,
+		"Builds the Planeta Linux instance for: `$c_name'",
+		sub {
+			say "running $c_id!";
+			
+			my $pl = PlanetaLinux->new({
+				countries => [$c_id],
+			});
+			
+			$pl->run;
+				
+			say "done!";
+		};
+	
+	push @$all, $c_id;
+		
+}
+
+task 'all',
+	"Builds all Planeta Linux instances.",
+	sub {
+		say "running all instances!";
+		my $pl = PlanetaLinux->new({
+			countries => $all,
+		});
+		$pl->run;
+		say "done!!1";
+	};
+
+task 'flush',
+	"Flushes the Planeta Linux cache.",
+	sub  {
+		say "flushing the cache toilet!";
+		my $cache_dir = dirname(__FILE__).'/../cache';
+		opendir my $dh, $cache_dir or die "couldn't open dir";
+		for my $d ( readdir($dh) ) {
+			next unless $d =~ /^[a-z]{2}$/;
+			next unless -d "$cache_dir/$d";
+			remove_tree "$cache_dir/$d";
+		}
+		say "done !";
+	};
+
+task 'www',
+	"Builds the static files for Planeta Linux",
+	sub {
+		my $t = Template->new(
+			INCLUDE_PATH => dirname(__FILE__).'/../template/www',
+			OUTPUT_PATH => dirname(__FILE__).'/../www',
+			PRE_PROCESS => 'header.tt',
+			POST_PROCESS => 'footer.tt'
+		) || die Template->error();
+		
+		my $pl = PlanetaLinux->new;
+		
+		$t->process('index.tt', {
+			countries => [$pl->countries], 
+		}, 'index.html') || die $t->error();
+		
+		my @templates = qw/lineamientos faq contacto banners creditos/;
+		# 
+		for my $temp ( @templates ) {
+		 	$t->process("$temp.tt", {}, "$temp.html") or die $t->error;
+		 }
+	};
+
+
+do_tasks();
+
+1;

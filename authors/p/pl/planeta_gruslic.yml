@@ -1,0 +1,11 @@
+--- 
+countries: 
+  - mx
+email: ~
+enabled: 'on'
+filename: planeta_gruslic
+message: ~
+name: Planeta Gruslic
+portal: 1
+twitter: ~
+url: http://feeds.gruslic.org.mx/PlanetaGruslic

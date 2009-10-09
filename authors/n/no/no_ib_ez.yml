@@ -1,0 +1,11 @@
+--- 
+countries: 
+  - mx
+email: ~
+enabled: 'on'
+face: mx/noeibanez.png
+filename: no_ib_ez
+message: ~
+name: "No\xC3\xA9 Ib\xC3\xA1\xC3\xB1ez"
+twitter: ~
+url: http://feeds.feedburner.com/ElCaminoDeUnGeek?format=xml

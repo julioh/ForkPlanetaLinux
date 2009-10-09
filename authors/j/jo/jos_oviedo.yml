@@ -1,0 +1,11 @@
+--- 
+countries: 
+  - mx
+email: ~
+enabled: 'on'
+face: mx/oviedo.png
+filename: jos_oviedo
+message: ~
+name: "Jos\xC3\xA9 Oviedo"
+twitter: ~
+url: http://feeds.feedburner.com/oviedolinux?format=xml

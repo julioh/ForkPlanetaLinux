@@ -1,0 +1,12 @@
+<div id="ContTabul" align="center">
+	<p><img src="images/planetalinux-main.png">
+		<br /><br />
+		<div id="banderas" align="center">
+		
+		[% FOREACH c IN countries %]
+		<a href="http://planetalinux.org/[% c %]"><img src="images/banderas/[% c %].png"></a>
+		[% END %]
+
+		</div>
+	</p>
+</div>

@@ -1,0 +1,11 @@
+--- 
+countries: 
+  - ve
+email: ~
+enabled: 'on'
+filename: fedora_ve
+message: ~
+name: Fedora-ve
+portal: 1
+twitter: ~
+url: http://www.fedora-ve.org/articles.rss

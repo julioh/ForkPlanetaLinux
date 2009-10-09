@@ -1,0 +1,11 @@
+--- 
+countries: 
+  - ve
+email: ~
+enabled: 'on'
+filename: centro_nacional_de_tecnolog_as_de_informaci_n
+message: ~
+name: "Centro Nacional de Tecnolog\xC3\xADas de Informaci\xC3\xB3n"
+portal: 1
+twitter: ~
+url: http://www.cnti.gob.ve/index.php?format=feed&type=atom

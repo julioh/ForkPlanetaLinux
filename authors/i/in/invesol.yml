@@ -1,0 +1,11 @@
+--- 
+countries: 
+  - ve
+email: ~
+enabled: 'on'
+filename: invesol
+message: ~
+name: Invesol
+portal: 1
+twitter: ~
+url: http://www.softwarelibre.gob.ve/invesol/cms/index.php?format=feed&type=rss

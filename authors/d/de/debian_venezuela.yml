@@ -1,0 +1,11 @@
+--- 
+countries: 
+  - ve
+email: ~
+enabled: 'on'
+filename: debian_venezuela
+message: ~
+name: Debian Venezuela
+portal: 1
+twitter: ~
+url: http://debian.org.ve/?q=aggregator/rss/2

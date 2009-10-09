@@ -1,0 +1,11 @@
+--- 
+countries: 
+  - mx
+email: ~
+enabled: 'on'
+filename: gnu_linux_upn
+message: ~
+name: GNU/Linux - UPN
+portal: 1
+twitter: ~
+url: http://sagan.ajusco.upn.mx:8080/linux/rss.xml

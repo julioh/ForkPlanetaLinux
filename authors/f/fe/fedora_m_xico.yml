@@ -1,0 +1,11 @@
+--- 
+countries: 
+  - mx
+email: ~
+enabled: 'on'
+filename: fedora_m_xico
+message: ~
+name: "Fedora M\xC3\xA9xico"
+portal: 1
+twitter: ~
+url: http://proyectofedora.org/mexico/feed/

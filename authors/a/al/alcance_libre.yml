@@ -1,0 +1,11 @@
+--- 
+countries: 
+  - mx
+email: ~
+enabled: 'on'
+filename: alcance_libre
+message: ~
+name: Alcance Libre
+portal: 1
+twitter: ~
+url: http://www.alcancelibre.org/backend/index.rss

@@ -1,0 +1,11 @@
+--- 
+countries: 
+  - mx
+email: ~
+enabled: 'on'
+filename: gulur
+message: ~
+name: GULUR
+portal: 1
+twitter: ~
+url: http://www.gulur.org/index.php?option=com_rss&feed=RSS2.0&no_html=1
